@@ -5,11 +5,12 @@ Description=Runs node.js server for Etekcity RF switches
 Type=simple
 User=pi
 Group=gpio
-ExecStart=/home/pi/rfRemoteControl/server.js
+ExecStart=/home/pi/RFRemoteControl/server.js
 Environment=PATH=/usr/bin:/usr/local/bin
 Environment=NODE_ENV=production
-WorkingDirectory=/home/pi/rfRemoteControl
+WorkingDirectory=/home/pi/RFRemoteControl
 TimeoutStopSec=30
+Restart=always
 
 [Install]
 WantedBy=multi-user.target
