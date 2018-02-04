@@ -1,0 +1,46 @@
+div {
+    width: 100%;
+    align-self: center;
+    /* Safari 6.1+ */
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+.switchButton {
+    background-color: #1849ce;
+    border-radius: 10px;
+    -webkit-appearance: button;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    width: 150px;
+}
+
+.switchButton:disabled {
+    background-color: #d3d3d3;
+}
+
+.errortext {
+    color: red;
+    display: none;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
+hr {
+    width: 20%;
+    min-width: 80px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}

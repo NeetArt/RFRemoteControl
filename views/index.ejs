@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EtekCity Online Remote Control</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h1>EtekCity Online Remote Control</h1>
+    <br/>
+    <% switches.forEach((switchObj) => { %>
+        <div>
+            <h2>
+                <%= switchObj.name %>
+            </h2>
+            <br/>
+            <p class="errortext">Error!</p>
+            <input type="button" class="switchButton" value="On" data-id="<%= switchObj.id %>" data-op="on" />
+            <input type="button" class="switchButton" value="Off" data-id="<%= switchObj.id %>" data-op="off" />
+            <br/>
+            <hr/>
+        </div>
+        <% }); %>
+
+</body>
+
+</html>
